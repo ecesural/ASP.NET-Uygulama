@@ -1,0 +1,87 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="AspTemplateUyg.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="UTF-8">
+	<title>Suskunlar Beach Resort</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+       <div id="background">
+		<div id="page">
+			<div id="header">
+				<div id="logo">
+					<a href="default.aspx"><img src="images/logo.png" alt="LOGO" height="112" width="118"></a>
+				</div>
+				<div id="navigation">
+					<ul>
+						<li class="selected">
+							<a href="default.aspx">Ana Sayfa</a>
+						</li>
+						<li>
+							<a href="hakkimizda.aspx">Hakkımızda</a>
+						</li>
+						<li>
+							<a href="odalar.aspx">Odalar</a>
+						</li>
+						<li>
+							<a href="dalis.aspx">Dalış</a>
+						</li>
+						<li>
+							<a href="mutfak.aspx">Mutfak</a>
+						</li>
+						<li>
+							<a href="haberler.aspx">Haberler</a>
+						</li>
+						<li>
+							<a href="iletisim.aspx">İletişim</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="contents">
+				<asp:ContentPlaceHolder ID="cphIcerik" runat="server"></asp:ContentPlaceHolder>
+			</div>
+		</div>
+		<div id="footer">
+			<div>
+				<ul class="navigation">
+					<li class="active">
+						<a href="default.aspx">Ana Sayfa</a>
+					</li>
+					<li>
+						<a href="hakkimizda.aspx">Hakkımızda</a>
+					</li>
+					<li>
+						<a href="odalar.aspx">Odalar</a>
+					</li>
+					<li>
+						<a href="dalis.aspx">Dalış</a>
+					</li>
+					<li>
+						<a href="mutfak.aspx">Mutfak</a>
+					</li>
+					<li>
+						<a href="haberler.aspx">Haberler</a>
+					</li>
+					<li>
+						<a href="iletisim.aspx">İletişim</a>
+					</li>
+				</ul>
+				<div id="connect">
+					<a href="http://pinterest.com/fwtemplates/" target="_blank" class="pinterest"></a> <a href="http://freewebsitetemplates.com/go/facebook/" target="_blank" class="facebook"></a> <a href="http://freewebsitetemplates.com/go/twitter/" target="_blank" class="twitter"></a> <a href="http://freewebsitetemplates.com/go/googleplus/" target="_blank" class="googleplus"></a>
+				</div>
+			</div>
+			<p>
+				&copy <%: DateTime.Now.Year %> by SUSKUNLAR BEACH RESORT. Her Hak Hakk'a Aittir.
+			</p>
+		</div>
+	</div>
+    </form>
+</body>
+</html>
